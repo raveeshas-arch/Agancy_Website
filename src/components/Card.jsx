@@ -1,0 +1,47 @@
+import React from 'react'
+
+const Card = () => {
+  return (
+    <div className="w-full mt-[100px]">
+  <div className="max-w-[1194px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[50px]">
+    
+    {/* Left */}
+    <div className="w-full max-w-[572px] h-[459px] bg-[#F4F4F4] rounded-[20px] flex flex-col items-center justify-center text-center mx-auto">
+      <h1 className="text-[25px]  leading-[170%] mt-[64px] font-semibold max-w-[365px]">Lorem ipsum is simply dummy text</h1>
+      <p className="text-[16px] mt-[36px] font-normal text-[#545454] leading-[170%] max-w-[476px]">
+         KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
+              applications and website builders measuring dozens of completed
+              projects. We build and develop mobile applications for several top
+              platforms, including Android & IOS.
+      </p>
+
+       <button className="max-w-[153px] mt-[36px] h-[49px] bg-[#1090CB] text-white rounded-[10px] px-[35px] mb-[49px]">
+        View More
+      </button>
+    
+     
+    </div>
+
+    {/* Right */}
+     <div className="w-full max-w-[572px] h-[459px] bg-[#1090CB] text-white rounded-[20px] flex flex-col items-center justify-center text-center mx-auto">
+      <h1 className="text-[25px]  leading-[170%] mt-[64px] font-semibold max-w-[365px]">Lorem ipsum is simply dummy text</h1>
+      <p className="text-[16px] mt-[36px] font-normal text-white leading-[170%] max-w-[476px]">
+         KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
+              applications and website builders measuring dozens of completed
+              projects. We build and develop mobile applications for several top
+              platforms, including Android & IOS.
+      </p>
+
+       <button className="max-w-[153px] mt-[36px] h-[49px] bg-[white] text-[#1090CB] rounded-[10px] px-[35px] mb-[49px]">
+        View More
+      </button>
+    
+     
+    </div>
+  </div>
+</div>
+
+  )
+}
+
+export default Card
