@@ -35,7 +35,7 @@ const Hero2 = () => {
   return (
     <section className="flex flex-col items-center justify-center  w-full max-w-[1536px] mx-auto px-4 mt-[43px] mb-[80px] ">
       {/* services */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[29px] mt-[43px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[29px] mt-[43px]">
         {services.map((service, index) => (
           <div key={index} className="flex items-center gap-[16px] text-left">
             <div

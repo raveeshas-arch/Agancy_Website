@@ -13,7 +13,7 @@ export const Company = () => {
     You will be in good Company
   </h1>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-[115px]  sm:mt-[40px] max-w-[1085px] w-full">
+  <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 lg:gap-[115px]  sm:mt-[40px] max-w-[1085px] w-full">
     <img src={img11} alt="Company Logo 1" className="max-w-[185px] mx-auto" />
     <img src={img12} alt="Company Logo 2" className="max-w-[185px] mx-auto" />
      <img src={img13} alt="Company Logo 4" className="max-w-[185px] mx-auto" />

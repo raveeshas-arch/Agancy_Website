@@ -74,15 +74,6 @@ const Dot = () => {
             )}
           </div>
 
-
-           {/* Background Blur  */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black/40 backdrop-blur-sm z-40"
-          onClick={toggleMenu} 
-        ></div>
-      )}
-
           {/* Mobile Menu */}
           <div className={`md:hidden absolute top-[80px] left-0 w-full bg-white z-50 transition-all duration-300 ease-in-out ${isOpen ? 'block' : 'hidden'}`}>
             <div className="flex flex-col items-center space-y-4 py-4">

@@ -12,10 +12,13 @@ import Footer from "./components/Footer";
 import Contact1 from "./components/Contact1";
 import Hero3 from "./components/Hero3";
 import Navbar from "./components/Navbar";
+import Dot from "./components/Dot";
 
 const App = () => {
   return (
     <div className="font-poppins">
+
+    {/* <Dot/> */}
 
       <Navbar/>
       <Hero1 /> 

@@ -4,7 +4,7 @@ import img20 from "../assets/img20.png";
 const Man = () => {
   return (
    <section
-         id="about"
+         id="services"
          className="flex flex-col lg:flex-row  sm:mt-[55px] lg:ml-[123px] md:text-left text-center p-2 justify-center items-center mt-[-90px] px-6 sm:px-0"
        >
          {/* Left */}
@@ -15,7 +15,7 @@ const Man = () => {
                       <img src={img20} alt="image" className="w-[26px] h-[26px]  " />
                     </div>
                     <div className="max-w-[308px] ">
-                      <h1 className="font-medium sm:text-[17px] text-[14px] leading-[175%] ">
+                      <h1 className="font-medium sm:text-[17px] md:text-[14px] text-[14px] leading-[175%] ">
                         Lorem ipsum is simply dummy text
                       </h1>
                       <p className="font-normal text-[#868686]  sm:text-[14px] text-[11px] leading-[175%]">

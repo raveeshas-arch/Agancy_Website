@@ -9,10 +9,10 @@ const Mobile1 = () => {
     >
       {/* Left */}
 
-      <div>
+      <div >
         {/* Lorem text */}
         <div className="flex sm:gap-[25px] gap-[10px] mt-[160px] text-left justify-center lg:justify-start">
-          <div className="max-w-[60px] bg-[#08D3BB] rounded-full p-[16px]">
+          <div className="max-w-[60px]  bg-[#08D3BB] rounded-full p-[16px]">
             <img src={img20} alt="image" className="w-[26px] h-[26px]  " />
           </div>
           <div className="max-w-[308px] ">
@@ -38,11 +38,12 @@ const Mobile1 = () => {
             platforms, including Android & IOS.
           </p>
         </div>
+
       </div>
 
       {/* Image  */}
       <div className=" flex sm:mt-[55px]  mt-[-120px] ">
-        <img src={img7} alt="mobile" className="sm:w-[803px]  " />
+        <img src={img7} alt="mobile" className="sm:w-[803px] " />
       </div>
     </section>
   );

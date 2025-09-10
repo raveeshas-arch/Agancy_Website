@@ -4,10 +4,12 @@ import img20 from "../assets/img20.png";
 const Magazine = () => {
   return (
     
-      <section className="flex flex-col lg:flex-row gap-[114px]  sm:mt-[55px] lg:mr-[123px]  justify-center items-center md:text-left text-center mt-[-90px] px-6 sm:px-0 ">
+      <section className="flex flex-col lg:flex-row gap-[114px]  sm:mt-[55px] lg:mr-[123px] justify-center items-center md:text-left text-center mt-[-90px] px-6 sm:px-0 ">
+       
+       
         {/* Image  */}
-        <div className=" flex sm:mt-[-55px] mt-[-200px]  order-2 lg:order-1 ">
-          <img src={img8} alt="mobile" className=" sm:w-[681px] sm:h-[521px] " />
+        <div className=" flex sm:mt-[0px] mt-[-200px]  order-2 lg:order-1 ">
+          <img src={img8} alt="mobile" className=" sm:w-[600px]  " />
         </div>
 
         {/* right */}
@@ -19,7 +21,7 @@ const Magazine = () => {
                      <img src={img20} alt="image" className="w-[26px] h-[26px]  " />
                    </div>
                    <div className="max-w-[308px] ">
-                     <h1 className="font-medium sm:text-[17px] text-[14px] leading-[175%] ">
+                     <h1 className="font-medium sm:text-[17px]  text-[14px] leading-[175%] ">
                        Lorem ipsum is simply dummy text
                      </h1>
                      <p className="font-normal text-[#868686]  sm:text-[14px] text-[11px] leading-[175%]">
@@ -41,6 +43,7 @@ const Magazine = () => {
             platforms, including Android & IOS.
           </p>
         </div>
+
         </div>
       </section>
     
