@@ -6,7 +6,7 @@ import instagram from "../assets/instagram.png";
 
 const Contact1 = () => {
   return (
-    <section id="contact" className="w-full mb-[53px] max-w-[1536px] mx-auto">
+    <section id="contact" className="w-full mb-[53px] max-w-[1536px] mx-auto ">
       <div className="lg:flex justify-around grid grid-cols-1  items-center">
         {/* Logo  */}
         <div className="flex justify-center lg:justify-start">
@@ -20,7 +20,8 @@ const Contact1 = () => {
           </div>
         </div>
 
-        <div className="mt-[87px] flex justify-center lg:justify-start">
+    {/* About Us */}
+        <div className="sm:mt-[87px] mt-[50px] flex justify-center lg:justify-start">
           <div className="max-w-[372px] text-center lg:text-left">
             <h2 className="text-[17px] font-semibold">About us</h2>
             <p className="mt-[15px] text-[#515151] leading-[186%]">
@@ -37,7 +38,7 @@ const Contact1 = () => {
 
         {/* Contact */}
         <div className="flex justify-center lg:justify-start">
-          <div className="max-w-[282px] text-center lg:text-left mt-[87px]">
+          <div className="max-w-[282px] text-center lg:text-left sm:mt-[87px] mt-[50px]">
             <h2 className="text-[17px] font-semibold">Contact us</h2>
             <p className="mt-[20px] text-[#515151]">
               Lorem ipsum is simply dummy text of the printing and typesetting
@@ -49,7 +50,7 @@ const Contact1 = () => {
 
         {/* Social icons */}
 
-        <div className="flex justify-center mt-[200px]">
+        <div className="flex justify-center sm:mt-[200px] mt-[60px]">
           <div className="flex gap-[16px]">
             <div className="bg-white p-[11px] rounded-full shadow-lg">
               <img

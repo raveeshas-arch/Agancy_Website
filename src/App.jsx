@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div className="font-poppins">
 
-      <Navbar />
+      <Navbar/>
       <Hero1 /> 
       <Hero2 />
       <Hero3/>

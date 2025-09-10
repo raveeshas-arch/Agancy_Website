@@ -38,38 +38,36 @@ const Navbar = () => {
       {/* mobile menu icon */}
       <div className="md:hidden cursor-pointer " onClick={toggleMenu}>
 
-        {isOpen ? <button className="text-[#1090CB] ">
-          <svg
-            className="w-8 h-8"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
-        </button> : <button className="text-[#1090CB] ">
-          <svg
-            className="w-8 h-8"
-            fill="none"
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
-        </button> }
 
+
+          {isOpen ? <svg
+  className="w-8 h-8 text-[#1090CB]"
+  fill="none"
+  stroke="#1090CB"
+  viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    d="M6 18L18 6M6 6l12 12"
+  />
+</svg> : <svg
+  className="w-8 h-8 text-[#1090CB]"
+  fill="none"
+  stroke="#1090CB"
+  viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    d="M4 6h16M4 12h16M4 18h16"
+  />
+</svg> }
+           
       </div>
 
       {/* Mobile Menu */}

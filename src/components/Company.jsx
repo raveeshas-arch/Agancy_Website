@@ -8,12 +8,12 @@ export const Company = () => {
   return (
 
 
-<section id='blog' className="flex flex-col items-center text-center px-4">
-  <h1 className="font-medium text-[24px] mt-[184px] leading-[159%]">
+<section id='blog' className="flex flex-col items-center text-center sm:px-0 px-6">
+  <h1 className="font-medium sm:text-[24px]  text-[20px] sm:mt-[184px] mt-[100px] leading-[159%]">
     You will be in good Company
   </h1>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-[115px] mt-[40px] max-w-[1085px] w-full">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-[115px]  sm:mt-[40px] max-w-[1085px] w-full">
     <img src={img11} alt="Company Logo 1" className="max-w-[185px] mx-auto" />
     <img src={img12} alt="Company Logo 2" className="max-w-[185px] mx-auto" />
      <img src={img13} alt="Company Logo 4" className="max-w-[185px] mx-auto" />
