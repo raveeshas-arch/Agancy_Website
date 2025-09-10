@@ -10,21 +10,24 @@ import Card from "./components/Card";
 import Newslettr from "./components/Newslettr";
 import Footer from "./components/Footer";
 import Contact1 from "./components/Contact1";
+import Hero3 from "./components/Hero3";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div className="font-poppins ">
-      <Hero1 />
+    <div className="font-poppins">
+
+      <Navbar />
+      <Hero1 /> 
       <Hero2 />
+      <Hero3/>
       <Mobile1 />
       <Magazine />
       <Man />
       <Card />
       <Company />
       <Newslettr />
-    {/* <Contact/> */}
-    {/* <Contactus/> */}
-    <Contact1 />
+     <Contact1 />
       <Footer />
     </div>
   );

@@ -8,8 +8,8 @@ export const Company = () => {
   return (
 
 
-<div id='blog' className="flex flex-col items-center text-center px-4">
-  <h1 className="font-semibold text-[24px] mt-[184px] leading-[159%]">
+<section id='blog' className="flex flex-col items-center text-center px-4">
+  <h1 className="font-medium text-[24px] mt-[184px] leading-[159%]">
     You will be in good Company
   </h1>
 
@@ -20,7 +20,7 @@ export const Company = () => {
     <img src={img14} alt="Company Logo 3" className="max-w-[185px] mx-auto" />
    
   </div>
-</div>
+</section>
 
   )
 }

@@ -33,49 +33,24 @@ const Hero2 = () => {
   ];
 
   return (
-    <div id ="services" className="max-w-[1536px] mx-auto  mt-[100px] mb-[100px] ">
-
-      {/* Services Section */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-[29px] mt-[43px] lg:ml-[123px]  ">
+    <section className="flex flex-col items-center justify-center  w-full max-w-[1536px] mx-auto px-4 mt-[43px] mb-[80px] ">
+      {/* services */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[29px] mt-[43px]">
         {services.map((service, index) => (
-          <div key={index} className="flex gap-3">
+          <div key={index} className="flex items-center gap-[16px] text-left">
             <div
-              className={`${service.bgColor} rounded-xl p-4 justify-center items-center flex `}
+              className={`w-20 h-20 rounded-xl flex items-center justify-center ${service.bgColor}`}
             >
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-[34px] h-[34px] "
-              />
+              <img src={service.image} alt={service.title} className="w-10 " />
             </div>
-            <div>
-              <h1 className="text-[20px] font-semibold ">{service.title}</h1>
-              <p className="text-gray-500">{service.description}</p>
+            <div className="ml-4">
+              <p className="text-[20px] font-semibold">{service.title}</p>
+              <p className="text-[#969696]">{service.description}</p>
             </div>
           </div>
         ))}
       </div>
-
-
-      {/* 
-Line */}
-
-      <div className="border-[#C7C7C7]  h-0 w-full  border-[0.5px] mt-[43px]  "></div>
-
-      {/* Text Section */}
-      <div className="text-center mt-[115px] mx-6">
-        <h1 className="font-poppins font-semibold text-[33px] leading-[160%]  text-center sm:w-full">
-          Lorem ipsum is simply dummy text of the printing{" "}
-        </h1>
-        <p className="mt-[32px] text-[#868686] font-normal text-[18px] leading-[175%] text-center">
-          Lorem ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
-        <p className='text-gray-500 class=" font-normal text-[18px] leading-[175%] text-center"'>
-          lorem ipsum has been the industry's
-        </p>
-      </div>
-    </div>
+    </section>
   );
 };
 
