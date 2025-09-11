@@ -1,11 +1,11 @@
 import React from "react";
-import img9 from "../assets/img9.png";
+import img9 from "../assets/imgg.png";
 import img20 from "../assets/img20.png";
 const Man = () => {
   return (
    <section
          id="services"
-         className="flex flex-col lg:flex-row  sm:mt-[55px] lg:ml-[123px] md:text-left text-center p-2 justify-center items-center mt-[-90px] px-6 sm:px-0"
+         className="flex flex-col lg:flex-row  lg:mt-[55px] lg:ml-[123px] md:text-left text-center p-2 justify-center items-center mt-[-90px] px-6 sm:px-0"
        >
          {/* Left */}
          <div>

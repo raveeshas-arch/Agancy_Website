@@ -50,7 +50,7 @@ const Contact1 = () => {
 
         {/* Social icons */}
 
-        <div className="flex justify-center sm:mt-[200px] mt-[60px]">
+        <div className="flex justify-center lg:mt-[200px] mt-[60px] cursor-pointer">
           <div className="flex gap-[16px]">
             <div className="bg-white p-[11px] rounded-full shadow-lg">
               <img

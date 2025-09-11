@@ -15,7 +15,7 @@ const Card = () => {
               platforms, including Android & IOS.
       </p>
 
-       <button className="max-w-[153px] mt-[36px] h-[49px] bg-[#1090CB] text-white rounded-[10px] px-[35px] mb-[49px]">
+       <button className="max-w-[153px] mt-[36px] h-[49px] bg-[#1090CB] text-white rounded-[10px] px-[35px] mb-[49px] hover:bg-[#279bd0] cursor-pointer">
         View More
       </button>
     
@@ -32,7 +32,7 @@ const Card = () => {
               platforms, including Android & IOS.
       </p>
 
-       <button className="max-w-[153px] mt-[36px] h-[49px] bg-[white] text-[#1090CB] rounded-[10px] px-[35px] mb-[49px]">
+       <button className="max-w-[153px] mt-[36px] h-[49px] bg-[white] text-[#1090CB] rounded-[10px] px-[35px] mb-[49px] cursor-pointer">
         View More
       </button>
     

@@ -5,7 +5,7 @@ const Mobile1 = () => {
   return (
     <section
       id="about"
-      className="flex flex-col lg:flex-row  md:mt-[55px] lg:ml-[123px] md:text-left text-center  justify-center items-center mt-[-90px] px-6 sm:px-0"
+      className="flex flex-col lg:flex-row  lg:mt-[55px] lg:ml-[123px] md:text-left text-center  justify-center items-center mt-[-90px] px-6 sm:px-0"
     >
       {/* Left */}
 
@@ -42,7 +42,7 @@ const Mobile1 = () => {
       </div>
 
       {/* Image  */}
-      <div className=" flex sm:mt-[55px]  mt-[-120px] ">
+      <div className=" flex lg:mt-[55px]  mt-[-120px] ">
         <img src={img7} alt="mobile" className="sm:w-[803px] " />
       </div>
     </section>

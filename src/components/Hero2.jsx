@@ -33,7 +33,7 @@ const Hero2 = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center justify-center  w-full max-w-[1536px] mx-auto px-4 mt-[43px] mb-[80px] ">
+    <section className="flex flex-col md:items-center  sm:justify-center justify-start md:px-0  px-6 w-full max-w-[1536px] mx-auto  mt-[43px] mb-[80px] ">
       {/* services */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[29px] mt-[43px]">
         {services.map((service, index) => (
@@ -43,7 +43,7 @@ const Hero2 = () => {
             >
               <img src={service.image} alt={service.title} className="w-10 " />
             </div>
-            <div className="ml-4">
+            <div className="">
               <p className="text-[20px] font-semibold">{service.title}</p>
               <p className="text-[#969696]">{service.description}</p>
             </div>
