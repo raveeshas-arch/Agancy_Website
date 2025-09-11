@@ -5,8 +5,12 @@ const Mobile1 = () => {
   return (
     <section
       id="about"
-      className="flex flex-col lg:flex-row  lg:mt-[55px] lg:ml-[123px] md:text-left text-center  justify-center items-center mt-[-90px] px-6 sm:px-0"
+      className="  flex flex-col lg:flex-row  lg:mt-[55px] lg:ml-[123px] md:text-left text-center  justify-center items-center mt-[-90px] px-6 sm:px-0"
     >
+
+      
+
+
       {/* Left */}
 
       <div >
@@ -42,7 +46,12 @@ const Mobile1 = () => {
       </div>
 
       {/* Image  */}
-      <div className=" flex lg:mt-[55px]  mt-[-120px] ">
+     
+      <div className=" relative flex lg:mt-[55px]  mt-[-120px] ">
+
+          {/* MObile gradient */}
+          {/* <div className=" inset-0 sm:z-10 -z-10 absolute top-[32px]  sm:left-[559px] sm:w-[497px] w-[200px] h-[504px] opacity-100 rounded-full blur-[60px] bg-[radial-gradient(circle_at_center,#DED9FF_90%,rgba(222,217,255,0)_100%)] in"></div>  */}
+      
         <img src={img7} alt="mobile" className="sm:w-[803px] " />
       </div>
     </section>

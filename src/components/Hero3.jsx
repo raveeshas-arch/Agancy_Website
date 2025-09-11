@@ -16,6 +16,8 @@ const Hero3 = () => {
           industry. Lorem Ipsum has been the industry's
         </p>
       </div>
+
+
     </section>
   );
 };

@@ -1,9 +1,18 @@
 import React from 'react'
+import Bell from '../assets/Bell.png'
 
 const Card = () => {
   return (
     <section className="w-full mt-[100px]  sm:px-0 px-6">
-  <div className="max-w-[1194px] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-[50px]">
+
+
+
+  <div className=" relative max-w-[1194px] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-[50px]">
+
+
+     <div className="absolute  top-[-80px] left-[1000px]">
+            <img src={Bell} />{" "}
+          </div>
     
     {/* Left */}
     <div className="w-full max-w-[572px]  bg-[#F4F4F4] rounded-[20px] flex flex-col items-center justify-center text-center mx-auto">
