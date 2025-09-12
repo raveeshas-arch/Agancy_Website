@@ -1,5 +1,5 @@
 import React from "react";
-import img9 from "../assets/imgg.png";
+import img9 from "../assets/vr.png";
 import img20 from "../assets/img20.png";
 const Man = () => {
   return (
@@ -41,7 +41,7 @@ const Man = () => {
    
          {/* Image  */}
          <div className=" flex sm:mt-[55px]  mt-[-100px]  ">
-           <img src={img9} alt="mobile" className=" sm:w-[803px] " />
+           <img src={img9} alt="mobile" className=" sm:w-[645px] " />
          </div>
        </section>
   );

@@ -7,7 +7,7 @@ const Card = () => {
 
 
 
-  <div className=" relative max-w-[1194px] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-[50px]">
+  <div className=" relative max-w-[1194px] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-[50px] ">
 
 
      <div className="absolute  top-[-80px] left-[1000px]">

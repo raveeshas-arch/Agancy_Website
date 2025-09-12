@@ -1,38 +1,54 @@
 import React from "react";
-import img8 from "../assets/img8.png";
+import img8 from "../assets/web.png";
 import img20 from "../assets/img20.png";
+
 const Magazine = () => {
+  
+  const infoBlocks = [
+    {
+      id: 1,
+      icon: img20,
+      title: "Lorem ipsum is simply dummy text",
+      description: "Lorem ipsum is simply dummy text",
+    },
+   
+  ];
+
   return (
-    
-      <section className="flex flex-col lg:flex-row gap-[114px] lg:mt-[55px] lg:mr-[123px] justify-center items-center md:text-left text-center mt-[-90px] px-6 sm:px-0 ">
-       
-       
-        {/* Image  */}
-        <div className=" flex lg:mt-[0px] mt-[-200px]  order-2 lg:order-1 ">
-          <img src={img8} alt="mobile" className=" sm:w-[600px]  " />
-        </div>
+    <section className="flex flex-col lg:flex-row gap-[114px] lg:mt-[55px] lg:mr-[123px] justify-center items-center md:text-left text-center mt-[-90px] px-6 sm:px-0 ">
+      {/* Image  */}
+      <div className=" flex lg:mt-[0px] mt-[-200px]  order-2 lg:order-1 ">
+        <img src={img8} alt="mobile" className=" sm:w-[600px]  " />
+      </div>
 
-        {/* right */}
+      {/* right */}
+      <div className="order-1 lg:order-2 ">
+        {/* Map over infoBlocks */}
+        {infoBlocks.map((block) => (
+          <div
+            key={block.id}
+            className="flex sm:gap-[25px] gap-[10px] mt-[160px] text-left justify-center lg:justify-start"
+          >
+            <div className="max-w-[60px] bg-[#1090CB] rounded-full p-[16px]">
+              <img
+                src={block.icon}
+                alt="image"
+                className="w-[26px] h-[26px]"
+              />
+            </div>
+            <div className="max-w-[308px]">
+              <h1 className="font-medium sm:text-[17px]  text-[14px] leading-[175%] ">
+                {block.title}
+              </h1>
+              <p className="font-normal text-[#868686]  sm:text-[14px] text-[11px] leading-[175%]">
+                {block.description}
+              </p>
+            </div>
+          </div>
+        ))}
 
-        <div className="order-1 lg:order-2 ">
-
-          {/* Lorem text */}
-         <div className="flex sm:gap-[25px] gap-[10px] mt-[160px] text-left justify-center lg:justify-start">
-                   <div className="max-w-[60px] bg-[#1090CB] rounded-full p-[16px]">
-                     <img src={img20} alt="image" className="w-[26px] h-[26px]  " />
-                   </div>
-                   <div className="max-w-[308px] ">
-                     <h1 className="font-medium sm:text-[17px]  text-[14px] leading-[175%] ">
-                       Lorem ipsum is simply dummy text
-                     </h1>
-                     <p className="font-normal text-[#868686]  sm:text-[14px] text-[11px] leading-[175%]">
-                       Lorem ipsum is simply dummy text
-                     </p>
-                   </div>
-                 </div>
-
-          {/* Text-section */}
-         <div className=" font-bold max-w-[516px] h-[389px] sm:mt-[45px] mt-[30px]">
+        {/* Text-section */}
+        <div className=" font-bold max-w-[516px] h-[389px] sm:mt-[45px] mt-[30px]">
           <h1 className=" font-semibold md:text-[30px] text-[24px] leading-[170%]">
             <span className="text-[#1090CB]">Lorem Ipsum</span> is simply dummy
             <br /> text of the printing.
@@ -44,10 +60,8 @@ const Magazine = () => {
             platforms, including Android & IOS.
           </p>
         </div>
-
-        </div>
-      </section>
-    
+      </div>
+    </section>
   );
 };
 

@@ -65,7 +65,7 @@ const Hero1 = () => {
 
             <div className="flex justify-center lg:justify-start lg:ml-[123px]">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-[400px] mt-[30px] sm:mt-[65px] mb-16">
-                <button className="animate-pulse w-full sm:h-[51px] h-[49px] rounded-[10px] bg-[#1090CB] text-white cursor-pointer hover:text-white hover:border hover:bg-sky-800 transition duration-300">
+                <button className=" w-full sm:h-[51px] h-[49px] rounded-[10px] bg-[#1090CB] text-white cursor-pointer hover:text-white hover:border hover:bg-sky-800 transition duration-300">
                   Contact us
                 </button>
                 <button className="w-full sm:h-[51px] h-[49px]  rounded-[10px] text-[#1090CB] border bg-white hover:bg-[#1090CB] hover:text-white cursor-pointer transition duration-300">
