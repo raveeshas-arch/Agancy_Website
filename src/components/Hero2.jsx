@@ -4,6 +4,8 @@ import img17 from "../assets/img17.png";
 import img18 from "../assets/img18.png";
 import img19 from "../assets/img19.png";
 
+
+
 const Hero2 = () => {
   const services = [
     {
@@ -35,9 +37,14 @@ const Hero2 = () => {
   return (
     <section className="flex flex-col md:items-center  sm:justify-center justify-start md:px-0  px-6 w-full max-w-[1536px] mx-auto  mt-[43px] mb-[80px] ">
       {/* services */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[29px] mt-[43px]">
+      < div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[29px] mt-[43px]"
+     >
+
+
         {services.map((service, index) => (
-          <div key={index} className="flex items-center gap-[16px] text-left">
+          <div key={index} className="flex items-center gap-[16px] text-left"   initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}>
             <div
               className={`w-20 h-20 rounded-xl flex items-center justify-center ${service.bgColor}`}
             >

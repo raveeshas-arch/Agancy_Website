@@ -1,6 +1,7 @@
 import React from "react";
 import img7 from "../assets/mobile.png";
 import img20 from "../assets/img20.png";
+import * as motion from "motion/react-client"
 
 // Data for each section
 const sectionsData = [
@@ -56,12 +57,17 @@ const Mobile1 = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative flex lg:mt-[55px] mt-[-120px]">
+          <motion.div className="relative flex lg:mt-[55px] mt-[-120px]"  initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 1,
+                scale: { type: "spring", visualDuration: 1, bounce: 0.5 },
+            }}>
 
            
 
             <img src={section.image} alt="mobile" className="sm:w-[803px]" />
-          </div>
+          </motion.div>
         </section>
       ))}
     </div>

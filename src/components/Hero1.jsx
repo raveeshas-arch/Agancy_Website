@@ -3,6 +3,9 @@ import Navbar from "./Navbar";
 import img2 from "../assets/img2.png";
 import Frame21 from "../assets/Frame21.png";
 import Frame22 from "../assets/Frame22.png";
+import * as motion from "motion/react-client"
+
+
 
 const Hero1 = () => {
   return (
@@ -50,8 +53,15 @@ const Hero1 = () => {
 
         <div className=" grid lg:grid-cols-2 sm:gap-[25px] justify-center items-center max-w-[1536px] mx-auto min-h-screen  ">
           {/* Left side */}
-          <div className="  mx-4 order-2 lg:order-1 text-center md:text-left  ">
-            <h1 className="w-full max-w-[630px] font-semibold sm:text-[40px]  text-[#000] lg:ml-[123px] text-[24px]">
+          <motion.div className="  mx-4 order-2 lg:order-1 text-center md:text-left  "
+     initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}>
+         
+            <h1 className="w-full max-w-[630px] font-semibold sm:text-[40px]  text-[#000] lg:ml-[123px] text-[24px]"
+
+         >
+
               Experienced <span className="text-[#1090CB]">mobile and web</span>{" "}
               applications and website builders measuring.
             </h1>
@@ -73,7 +83,7 @@ const Hero1 = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Side */}
           <div className=" mt-[-60px] mx-auto w-full order-1 lg:order-2 ">

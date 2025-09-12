@@ -17,9 +17,6 @@ import Dot from "./components/Dot";
 const App = () => {
   return (
     <div className="font-poppins">
-
-    {/* <Dot/> */}
-
       <Navbar/>
       <Hero1 /> 
       <Hero2 />
