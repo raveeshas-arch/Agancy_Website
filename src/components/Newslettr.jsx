@@ -1,5 +1,4 @@
-import React from "react";
-import star from '../assets/star.png'
+import star from '../assets/Star.png'
 import Piechart from '../assets/PaiChart.png'
 import * as motion from "motion/react-client"
 
