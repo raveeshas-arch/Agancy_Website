@@ -9,7 +9,7 @@ const Newslettr = () => {
 
       {/* Text */}
 
-      <h1 className="font-semibold sm:text-[25px] text-[21px] md:text-[33px] leading-[160%] text-center w-full max-w-[516px] mx-auto overflow-hidden">
+      <h1 className="font-semibold sm:text-[25px] text-[20px] md:text-[33px] leading-[160%] text-center w-full max-w-[516px] mx-auto overflow-hidden">
 
         {/* Star */}
       <motion.div 
