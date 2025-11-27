@@ -9,14 +9,9 @@ import * as motion from "motion/react-client"
 
 const Hero1 = () => {
   return (
-    <section id="home" className=" relative  bg-[#1090CB1A] ">
-
-      {/* Frames */}
+    <section id="home" className="   bg-[#1090CB1A] overflow-x-hidden ">
 
       
-      <div className="absolute top-[450px] left-0">
-        <img src={Frame22} />{" "}
-      </div>
 
       {/* Orange gradient */}
       <div
@@ -45,13 +40,17 @@ const Hero1 = () => {
 
       <div className=" sm:mt-[75px] mt-[55px] ">
 
+        <div className=" relative grid lg:grid-cols-2 sm:gap-[25px] container justify-center items-center max-w-[1536px] mx-auto min-h-screen  ">
+
+
+          
 {/* Frame */}
 
-        <div className="absolute top-[272px] left-[1393px] 2xl:hidden">
+        <div className="absolute top-[272px] left-[1393px] ">
         <img src={Frame21} />{" "}
       </div>
 
-        <div className=" grid lg:grid-cols-2 sm:gap-[25px] justify-center items-center max-w-[1536px] mx-auto min-h-screen  ">
+
           {/* Left side */}
           <motion.div className="  mx-4 order-2 lg:order-1 text-center md:text-left  "
      initial={{ opacity: 0, y: 40 }}
@@ -75,20 +74,34 @@ const Hero1 = () => {
 
             <div className="flex justify-center lg:justify-start lg:ml-[123px]">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-[400px] mt-[30px] sm:mt-[65px] mb-16">
-                <button className=" w-full sm:h-[51px] h-[49px] rounded-[10px] bg-[#1090CB] text-white cursor-pointer hover:text-white hover:border hover:bg-sky-800 transition duration-300">
+                <motion.button
+                 whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.95 }}
+                className=" w-full sm:h-[51px] h-[49px] rounded-[10px] bg-[#1090CB] text-white cursor-pointer hover:text-white hover:border hover:bg-sky-800 transition duration-300">
                   Contact us
-                </button>
-                <button className="w-full sm:h-[51px] h-[49px]  rounded-[10px] text-[#1090CB] border bg-white hover:bg-[#1090CB] hover:text-white cursor-pointer transition duration-300">
+                </motion.button>
+                <motion.button
+                 whileHover={{ scale: 1.08 }}
+                  whileTap={{ scale: 0.95 }}
+                 className="w-full sm:h-[51px] h-[49px]  rounded-[10px] text-[#1090CB] border bg-white hover:bg-[#1090CB] hover:text-white cursor-pointer transition duration-300">
                   View more
-                </button>
+                </motion.button>
               </div>
             </div>
           </motion.div>
 
           {/* Right Side */}
-          <div className=" mt-[-60px] mx-auto w-full order-1 lg:order-2 ">
+          <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 2,
+                delay: 0.1,
+                ease: [0, 0.71, 0.2, 1.01],
+            }}
+          className=" mt-[-60px] mx-auto w-full order-1 lg:order-2 ">
             <img src={img2} alt="img" className=" w-[400px]  sm:w-[597px]   " />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

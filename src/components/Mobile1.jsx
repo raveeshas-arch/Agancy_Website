@@ -11,12 +11,13 @@ const sectionsData = [
     smallTitle: "Lorem ipsum is simply dummy text",
     smallDesc: "Lorem ipsum is simply dummy text",
     mainTitle: "Lorem Ipsum is simply dummy text of the printing.",
-    highlight: "Lorem Ipsum",
+    blue: "Lorem Ipsum",
     mainDesc:
       "KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android & IOS.",
     image: img7,
   }
 ]
+
 
 const Mobile1 = () => {
   return (
@@ -27,11 +28,12 @@ const Mobile1 = () => {
           key={section.id}
           id= "about"
           className="flex flex-col lg:flex-row lg:mt-[55px] lg:ml-[123px] md:text-left text-center justify-center items-center mt-[-90px] px-6 sm:px-0">
+         
           {/* Left */}
           <div>
-            {/* Small  box */}
+            {/* Small lorem text */}
             <div className="flex sm:gap-[25px] gap-[10px] mt-[160px] text-left justify-center lg:justify-start">
-              <div className="max-w-[60px] bg-[#08D3BB] rounded-full p-[16px]">
+              <div className="max-w-[60px] bg-[#08D3BB] rounded-full p-[16px] ease-out hover:scale-110">
                 <img src={section.icon} alt="icon" className="w-[26px] h-[26px]" />
               </div>
               <div className="max-w-[308px]">
@@ -44,11 +46,12 @@ const Mobile1 = () => {
               </div>
             </div>
 
+
             {/* Main Text Section */}
             <div className="font-bold max-w-[516px] h-[389px] sm:mt-[45px] mt-[30px]">
               <h1 className="font-semibold md:text-[30px] text-[24px] leading-[170%]">
-                <span className="text-[#1090CB]">{section.highlight}</span>{" "}
-                {section.mainTitle.replace(section.highlight, "")}
+                <span className="text-[#1090CB]">{section.blue}</span>{" "}
+                {section.mainTitle.replace(section.blue, "")}
               </h1>
               <p className="text-[#545454] max-w-[476px] sm:mt-[56px] mt-[30px] sm:text-[16px] text-[14px] leading-[170%] font-normal">
                 {section.mainDesc}
@@ -57,15 +60,10 @@ const Mobile1 = () => {
           </div>
 
           {/* Right Image */}
-          <motion.div className="relative flex lg:mt-[55px] mt-[-120px]"  initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-                duration: 1,
-                scale: { type: "spring", visualDuration: 1, bounce: 0.5 },
-            }}>
-
-           
-
+          <motion.div 
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.95 }}
+          className="relative flex lg:mt-[55px] mt-[-120px]">
             <img src={section.image} alt="mobile" className="sm:w-[803px]" />
           </motion.div>
         </section>

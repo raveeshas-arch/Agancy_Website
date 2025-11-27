@@ -1,4 +1,5 @@
 import React, { useState ,useEffect } from 'react'
+import * as motion from "motion/react-client"
 
 const Dot = () => {
 
@@ -74,9 +75,12 @@ const Dot = () => {
               ))}
 
 
-              <button className="bg-[#1090CB] w-[125px] h-[41px] rounded-[6px] cursor-pointer hover:bg-sky-400">
+              <motion.button
+               whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.95 }}
+              className="bg-[#1090CB] w-[125px] h-[41px] rounded-[6px] cursor-pointer hover:bg-sky-400">
                 <a href='#contact' className='text-white text-[13px]'>Contact Us</a>
-              </button>
+              </motion.button>
             </div>
           </div>
 
@@ -129,11 +133,12 @@ const Dot = () => {
               </button>
             </div>
           </div>
+          
         </nav>
       </div>
 
       {/* line */}
-      <div className='fixed border-[#C4C4C4] h-0 w-full border-[1px] mt-0'></div>
+      <div className='fixed border-[#C4C4C4] h-0 w-full border-[1px] mt-19'></div>
     </div>
   )
 }

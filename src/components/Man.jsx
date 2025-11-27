@@ -1,6 +1,8 @@
 import React from "react";
 import img9 from "../assets/vr.png";
 import img20 from "../assets/img20.png";
+import * as motion from "motion/react-client"
+
 const Man = () => {
   return (
    <section
@@ -11,7 +13,7 @@ const Man = () => {
          <div>
            {/* Lorem text */}
            <div className="flex sm:gap-[25px] gap-[10px] mt-[160px] text-left justify-center lg:justify-start">
-                    <div className="max-w-[60px] bg-[#9208D3]  rounded-full p-[16px]">
+                    <div className="max-w-[60px] bg-[#9208D3]  rounded-full p-[16px] ease-out hover:scale-110">
                       <img src={img20} alt="image" className="w-[26px] h-[26px]  " />
                     </div>
                     <div className="max-w-[308px] ">
@@ -40,9 +42,12 @@ const Man = () => {
          </div>
    
          {/* Image  */}
-         <div className=" flex sm:mt-[55px]  mt-[-100px]  ">
+         <motion.div 
+          whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.95 }}
+         className=" flex sm:mt-[55px]  mt-[-100px]  ">
            <img src={img9} alt="mobile" className=" sm:w-[645px] " />
-         </div>
+         </motion.div>
        </section>
   );
 };

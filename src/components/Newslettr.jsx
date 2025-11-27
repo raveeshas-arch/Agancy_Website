@@ -1,7 +1,7 @@
 import React from "react";
 import star from '../assets/star.png'
 import Piechart from '../assets/PaiChart.png'
-
+import * as motion from "motion/react-client"
 
 const Newslettr = () => {
   return (
@@ -11,9 +11,25 @@ const Newslettr = () => {
 
       <h1 className="font-semibold sm:text-[25px] text-[20px] md:text-[33px] leading-[160%] text-center w-full max-w-[516px] mx-auto overflow-hidden">
 
-        
-      <div className="absolute top-[-30px] left-[167px] "><img src={star} className="w-[66px] h-[66px]"/> </div>
-      <div className="absolute top-[94px] left-[989px]"><img src={Piechart} className="w-[54px] h-[54px] "/> </div>
+        {/* Star */}
+      <motion.div 
+       animate={{ y: [0, -15, 0] }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+      className="absolute top-[-30px] left-[167px] "><img src={star} className="w-[66px] h-[66px]"/> </motion.div>
+
+      {/* Circle */}
+      <motion.div
+       animate={{ y: [0, -15, 0] }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+      className="absolute top-[94px] left-[989px]"><img src={Piechart} className="w-[54px] h-[54px] "/> </motion.div>
 
         Lorem ipsum is simply dummy text of the printing.
       </h1>
@@ -26,12 +42,14 @@ const Newslettr = () => {
           className="w-full  sm:max-w-[532px] h-[60px] sm:h-[67px] px-4 py-2  bg-white rounded-[10px]"
         />
 
-        <button
+        <motion.button
+         whileHover={{ scale: 1.08 }}
+        whileTap={{ scale: 0.95 }}
           type="submit"
-          className=" animate-pulse w-full sm:max-w-[173px]  h-[60px] sm:h-[67px] text-[16px] bg-black cursor-pointer text-white rounded-md transition hover:bg-gray-800 sm:py-2 sm:px-4"
+          className="  w-full sm:max-w-[173px]  h-[60px] sm:h-[67px] text-[16px] bg-black cursor-pointer text-white rounded-md transition  sm:py-2 sm:px-4"
         >
           SUBSCRIBE
-        </button>
+        </motion.button>
       </form>
     </section>
   );

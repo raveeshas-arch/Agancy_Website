@@ -1,6 +1,7 @@
 import React from "react";
 import img8 from "../assets/web.png";
 import img20 from "../assets/img20.png";
+import * as motion from "motion/react-client"
 
 const Magazine = () => {
   
@@ -16,25 +17,34 @@ const Magazine = () => {
 
   return (
     <section className="flex flex-col lg:flex-row gap-[114px] lg:mt-[55px] lg:mr-[123px] justify-center items-center md:text-left text-center mt-[-90px] px-6 sm:px-0 ">
+     
+     {/* left */}
       {/* Image  */}
-      <div className=" flex lg:mt-[0px] mt-[-200px]  order-2 lg:order-1 ">
-        <img src={img8} alt="mobile" className=" sm:w-[600px]  " />
-      </div>
+      <motion.div 
+        whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.95 }}
+      className=" flex lg:mt-[0px] mt-[-200px]  order-2 lg:order-1 ">
+        <img src={img8} alt="web" className=" sm:w-[600px] " />
+      </motion.div>
 
       {/* right */}
       <div className="order-1 lg:order-2 ">
-        {/* Map over infoBlocks */}
+
+
+        {/* infoBlocks */}
         {infoBlocks.map((block) => (
           <div
             key={block.id}
-            className="flex sm:gap-[25px] gap-[10px] mt-[160px] text-left justify-center lg:justify-start"
+            className="flex sm:gap-[25px] gap-[10px] mt-[160px] text-left justify-center lg:justify-start "
           >
-            <div className="max-w-[60px] bg-[#1090CB] rounded-full p-[16px]">
+
+            <div className="max-w-[60px] bg-[#1090CB] rounded-full p-[16px] ease-out hover:scale-110">
               <img
                 src={block.icon}
                 alt="image"
                 className="w-[26px] h-[26px]"
               />
+
             </div>
             <div className="max-w-[308px]">
               <h1 className="font-medium sm:text-[17px]  text-[14px] leading-[175%] ">
@@ -46,6 +56,7 @@ const Magazine = () => {
             </div>
           </div>
         ))}
+
 
         {/* Text-section */}
         <div className=" font-bold max-w-[516px] h-[389px] sm:mt-[45px] mt-[30px]">

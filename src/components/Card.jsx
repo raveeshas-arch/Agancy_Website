@@ -1,76 +1,73 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import Bell from "../assets/Bell.png";
 
-// Reusable CardBox with animation
-const CardBox = ({ title, text, btnText, bgColor, textColor, btnBg, btnTextColor, delay }) => {
-  return (
-    <motion.div
-      className="w-full max-w-[572px] rounded-[20px] flex flex-col items-center justify-center text-center mx-auto"
-      style={{ backgroundColor: bgColor, color: textColor }}
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay }}
-      viewport={{ once: true }}
-    >
-      <h1 className="sm:text-[25px] text-[24px] leading-[170%] mt-[64px] font-semibold max-w-[365px]">
-        {title}
-      </h1>
-      <p
-        className="sm:text-[16px] text-[14px] mt-[36px] font-normal leading-[170%] max-w-[476px] p-4"
-        style={{ color: textColor }}
-      >
-        {text}
-      </p>
-      <motion.button
-        className="max-w-[153px] mt-[36px] h-[49px] rounded-[10px] px-[35px] mb-[49px] cursor-pointer"
-        style={{ backgroundColor: btnBg, color: btnTextColor }}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        {btnText}
-      </motion.button>
-    </motion.div>
-  );
-};
-
 const Card = () => {
+  // Card data
+  const cards = [
+    {
+      id: 1,
+      bg: "bg-[#F4F4F4]",
+      color:"text-black",
+      textColor: "text-[#545454]",
+      button: "bg-[#1090CB] text-white hover:bg-[#279bd0]",
+    },
+    {
+      id: 2,
+      bg: "bg-[#1090CB]",
+      color:"text-white",
+      textColor: "text-white",
+      button: "bg-white text-[#1090CB]",
+    },
+  ];
+
   return (
     <section className="w-full mt-[100px] sm:px-0 px-6">
       <div className="relative max-w-[1194px] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-[50px]">
-        <div className="absolute top-[-80px] left-[1000px]">
+        {/* Floating Bell */}
+        <motion.div
+          className="absolute top-[-80px] left-[1000px]"
+          animate={{ y: [0, -15, 0] }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
           <img src={Bell} alt="Bell" />
-        </div>
+        </motion.div>
 
-        {/* Left Card */}
-        <CardBox
-          title="Lorem ipsum is simply dummy text"
-          text="KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
+        {/* Cards */}
+        {cards.map((card, index) => (
+          <motion.div
+            key={card.id}
+            initial={{ opacity: 0, x: index === 0 ? -80 : 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className={`w-full max-w-[572px] ${card.bg} rounded-[20px] flex flex-col items-center justify-center text-center mx-auto`}
+          >
+            <h1 className={`sm:text-[25px] text-[24px] leading-[170%] mt-[64px] font-semibold max-w-[365px] ${card.color}` }>
+              Lorem ipsum is simply dummy text
+            </h1>
+            <p
+              className={`sm:text-[16px] text-[14px] mt-[36px] font-normal leading-[170%] max-w-[476px] p-4 ${card.textColor}`}
+            >
+              KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
               applications and website builders measuring dozens of completed
               projects. We build and develop mobile applications for several top
-              platforms, including Android & IOS."
-          btnText="View More"
-          bgColor="#F4F4F4"
-          textColor="#545454"
-          btnBg="#1090CB"
-          btnTextColor="#fff"
-          delay={0.2}
-        />
+              platforms, including Android & IOS.
+            </p>
 
-        {/* Right Card */}
-        <CardBox
-          title="Lorem ipsum is simply dummy text"
-          text="KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
-              applications and website builders measuring dozens of completed
-              projects. We build and develop mobile applications for several top
-              platforms, including Android & IOS."
-          btnText="View More"
-          bgColor="#1090CB"
-          textColor="#fff"
-          btnBg="#fff"
-          btnTextColor="#1090CB"
-          delay={0.4}
-        />
+            <motion.button
+              whileHover={{ scale: 1.08 }}
+              whileTap={{ scale: 0.95 }}
+              className={`max-w-[153px] mt-[36px] h-[49px] rounded-[10px] px-[35px] mb-[49px] cursor-pointer ${card.button}`}
+            >
+              View More
+            </motion.button>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

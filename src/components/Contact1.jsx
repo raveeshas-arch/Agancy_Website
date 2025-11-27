@@ -52,24 +52,24 @@ const Contact1 = () => {
 
         <div className="flex justify-center lg:mt-[200px] mt-[60px] cursor-pointer">
           <div className="flex gap-[16px]">
-            <div className="bg-white p-[11px] rounded-full shadow-lg">
+            <div className="bg-white p-[11px] rounded-full shadow-lg  ease-out hover:scale-150">
               <img
                 src={facebook}
                 alt="Facebook"
                 className="w-[12px] h-[12px]"
               />
             </div>
-            <div className="bg-white p-[11px] rounded-full shadow-lg">
+            <div className="bg-white p-[11px] rounded-full shadow-lg ease-out hover:scale-150">
               <img src={twitter} alt="Twitter" className="w-[13px] h-[13px]" />
             </div>
-            <div className="bg-white p-[11px] rounded-full shadow-lg">
+            <div className="bg-white p-[11px] rounded-full shadow-lg ease-out hover:scale-150">
               <img
                 src={instagram}
                 alt="Instagram"
                 className="w-[13px] h-[13px]"
               />
             </div>
-            <div className="bg-white p-[11.8px] rounded-full shadow-lg">
+            <div className="bg-white p-[11.8px] rounded-full shadow-lg ease-out hover:scale-150">
               <img
                 src={linkedin}
                 alt="LinkedIn"
