@@ -9,7 +9,7 @@ import * as motion from "motion/react-client"
 
 const Hero1 = () => {
   return (
-    <section id="home" className="   bg-[#1090CB1A] overflow-x-hidden ">
+    <section id="home" className="   bg-[#1090CB1A] overflow-x-hidden overflow-y-hidden ">
 
       
 
